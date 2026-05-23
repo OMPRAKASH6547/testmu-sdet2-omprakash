@@ -1,0 +1,30 @@
+{
+  "checkout": {
+    "valid": {
+      "firstName": "Omprakash",
+      "lastName": "TestMu",
+      "postalCode": "560001"
+    },
+    "invalid": [
+      {
+        "firstName": "",
+        "lastName": "TestMu",
+        "postalCode": "560001",
+        "expectedError": "First Name is required"
+      },
+      {
+        "firstName": "Omprakash",
+        "lastName": "",
+        "postalCode": "560001",
+        "expectedError": "Last Name is required"
+      },
+      {
+        "firstName": "Omprakash",
+        "lastName": "TestMu",
+        "postalCode": "",
+        "expectedError": "Postal Code is required"
+      }
+    ]
+  },
+  "sortOptions": ["az", "za", "lohi", "hilo"]
+}

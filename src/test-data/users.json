@@ -1,0 +1,41 @@
+{
+  "validUsers": [
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "description": "Standard user with full access"
+    },
+    {
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "description": "User with known UI quirks"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "username": "invalid_user",
+      "password": "wrong_password",
+      "expectedError": "Username and password do not match"
+    },
+    {
+      "username": "standard_user",
+      "password": "wrong_password",
+      "expectedError": "Username and password do not match"
+    }
+  ],
+  "lockedOutUser": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedError": "Sorry, this user has been locked out."
+  },
+  "apiLogin": {
+    "valid": {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka"
+    },
+    "invalid": {
+      "email": "invalid@reqres.in",
+      "password": "wrong"
+    }
+  }
+}

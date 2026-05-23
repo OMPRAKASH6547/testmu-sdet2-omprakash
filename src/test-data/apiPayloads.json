@@ -1,0 +1,34 @@
+{
+  "createUser": {
+    "name": "TestMu SDET",
+    "job": "Quality Engineer"
+  },
+  "updateUser": {
+    "name": "TestMu SDET Updated",
+    "job": "Senior SDET"
+  },
+  "register": {
+    "valid": {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol"
+    },
+    "invalid": {
+      "email": "not-an-email",
+      "password": ""
+    }
+  },
+  "login": {
+    "valid": {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka"
+    },
+    "missingPassword": {
+      "email": "eve.holt@reqres.in"
+    }
+  },
+  "notFoundUserId": 9999,
+  "listPagination": {
+    "page": 2,
+    "perPage": 6
+  }
+}
